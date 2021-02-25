@@ -1,0 +1,75 @@
+body.dark-mode {
+  background-color: #181f29;
+  position: relative;
+}
+.dark-mode nav .links-container .nav-link-container a:visited,
+.dark-mode nav .links-container .nav-link-container a:link {
+  color: white;
+}
+.dark-mode nav .links-container .nav-link-container .active-nav-link {
+  background-color: #676cdb;
+}
+.dark-mode nav .icon-container {
+  background-color: #676cdb;
+}
+.dark-mode .nav--active {
+  background-color: #12171fec;
+}
+.dark-mode header .info-container .name,
+.dark-mode header .info-container .job {
+  color: white;
+}
+.dark-mode header .info-container .job span {
+  -webkit-text-stroke-color: white;
+}
+.dark-mode header .info-container .description {
+  color: rgba(255, 255, 255, 0.658);
+}
+.dark-mode header .info-container .network-container .network-link {
+  background-color: #676cdb;
+  color: white;
+}
+.dark-mode header .info-container .network-container .network-link:hover {
+  color: aquamarine;
+  background-color: #595eb3;
+}
+.dark-mode .section-title {
+  color: white;
+}
+.section-title span:first-of-type,
+.section-title span:last-of-type {
+  -webkit-text-stroke-color: white;
+}
+.dark-mode .see-more a:link,
+.dark-mode .see-more a:visited {
+  color: whitesmoke;
+}
+.dark-mode .see-more a:hover {
+  color: whitesmoke;
+}
+.see-more a::after {
+  background-color: #676cdb;
+}
+.dark-mode .skills-title {
+  color: whitesmoke;
+}
+.dark-mode .skills-wrapper .skills-container div {
+  background-color: #676cdb;
+  color: white;
+}
+.dark-mode footer {
+  background-color: #676cdb;
+}
+.dark-mode .footer-icon-container .icon {
+  background-color: transparent;
+  border: 1pt solid white;
+}
+.dark-mode .footer-icon-container .icon a:link {
+  color: white;
+}
+.dark-mode .tag {
+  color: whitesmoke;
+}
+.dark-mode footer small {
+  color: whitesmoke;
+}
