@@ -1,13 +1,11 @@
 let darkMode = localStorage.getItem("darkMode");
 darkMode = darkMode ? JSON.parse(darkMode) : darkMode;
-console.log(darkMode);
 const body = document.getElementById("body");
 const darkModeButton = document.getElementById("darkmode-button");
 if (darkMode) {
   body.classList.add("dark-mode");
 }
 darkModeButton.addEventListener("click", function (e) {
-  console.log(darkMode);
   if (darkMode === null) {
     darkMode = true;
     localStorage.setItem("darkMode", true);

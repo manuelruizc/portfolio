@@ -30,6 +30,29 @@ nav .icon-container {
   height: 50px;
   border-radius: 70px;
   background-color: aquamarine;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+nav .icon-container i {
+  font-size: 1.5rem;
+}
+nav .icon-container .dark-mode-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: white;
+  opacity: 0;
+  transform: scale(0);
+  padding-left: 2px;
+}
+nav .icon-container .light-mode-icon {
+  color: rgb(214, 161, 62);
+  font-weight: 700;
 }
 nav .links-container {
   display: flex;
@@ -139,12 +162,107 @@ header .info-container .network-container .network-link i {
   transition: 250ms ease-in-out color;
 }
 header .hero-image-container {
-  width: 40vw;
-  height: 40vw;
-  border-radius: 50%;
-  background-color: red;
+  width: 50vw;
+  height: 42vw;
+  position: relative;
+  border: 1pt solid white;
+}
+#illustration {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .clip-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: circle(0% at 50% 50%);
+  z-index: 10;
+  transition: 0s linear all;
+  filter: grayscale(100%);
 }
 
+.rectangles {
+  position: absolute;
+  z-index: 12;
+  transition: 0.2s ease-in-out all;
+}
+.square {
+  width: 2vw;
+  height: 2vw;
+}
+.rectangles:nth-of-type(1) {
+  width: 25%;
+  height: 5%;
+  background-color: aquamarine;
+  top: 16%;
+  left: 5%;
+}
+.rectangles-out.go-left {
+  transform: translateX(-120%) scaleX(1.5);
+  opacity: 0;
+}
+.rectangles-out.go-right {
+  transform: translateX(100%) scalex(1.2);
+  opacity: 0;
+}
+.rectangles:nth-of-type(2) {
+  width: 2vw;
+  height: 2vw;
+  background-color: #676cdb;
+  top: 25%;
+  right: 20%;
+}
+.rectangles:nth-of-type(3) {
+  width: 15%;
+  height: 5%;
+  background-color: #676cdb;
+  left: 5%;
+  top: 38%;
+}
+.rectangles:nth-of-type(4) {
+  background-color: aquamarine;
+  right: 8%;
+  top: 38%;
+}
+.rectangles:nth-of-type(5) {
+  width: 25%;
+  height: 5%;
+  background-color: aquamarine;
+  right: 11%;
+  top: 50%;
+}
+.rectangles:nth-of-type(6) {
+  width: 22%;
+  height: 5%;
+  background-color: #676cdb;
+  right: 18%;
+  bottom: 32%;
+}
+.rectangles:nth-of-type(7) {
+  background-color: aquamarine;
+  left: 7%;
+  bottom: 25%;
+}
+.rectangles:nth-of-type(8) {
+  width: 18%;
+  height: 5%;
+  background-color: #676cdb;
+  left: 18%;
+  bottom: 20%;
+}
+.rectangles:nth-of-type(9) {
+  background-color: aquamarine;
+  right: 33%;
+  bottom: 20%;
+}
 .section-title {
   display: flex;
   flex-direction: column;
@@ -394,6 +512,7 @@ header .hero-image-container {
 .skills-wrapper .skills-container div {
   font-size: 1.2rem;
   margin-right: 16px;
+  margin-bottom: 22px;
   position: relative;
   padding: 2px 14px;
   border-radius: 50px;

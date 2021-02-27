@@ -1,0 +1,147 @@
+@media (max-width: 425px) {
+  #darkmode-button {
+    position: fixed;
+    bottom: 14px;
+    right: 18px;
+  }
+  header {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  header .info-container {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+  header .info-container .name {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  header .info-container .job {
+    text-align: center;
+    width: 100%;
+    font-size: 3.3rem;
+  }
+  header .info-container .description {
+    text-align: center;
+    font-size: 1rem;
+  }
+  header .info-container .network-container {
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    margin-bottom: 12%;
+  }
+  header .info-container .network-container .network-link {
+    margin: 0;
+  }
+
+  .hero-image-container {
+    width: 100% !important;
+    background-color: red;
+  }
+
+  .section-title,
+  .section-title span:first-of-type,
+  .section-title span:last-of-type {
+    font-size: 3rem;
+    text-align: center;
+    padding: 0;
+  }
+  .projects-container {
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .projects-container .small-project-container,
+  .projects-container .regular-project-container {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 20px;
+    padding: 30px 20px;
+  }
+  .projects-container .small-project-container:hover,
+  .projects-container .regular-project-container:hover,
+  .sm-p1,
+  .sm-p2,
+  .md-p1,
+  .md-p2 {
+    width: 100% !important;
+  }
+  .project-thumbnail,
+  .project-links-container {
+    opacity: 1 !important;
+    transform: translate(0) !important;
+  }
+  .project-title-container .technology {
+    font-size: 0.8rem !important;
+  }
+  .project-title-container .project-name {
+    font-size: 1.3rem;
+  }
+  .project-thumbnail {
+    width: 40% !important;
+    height: 100% !important;
+    bottom: 0 !important;
+    right: 0 !important;
+  }
+  .skills-title {
+    font-size: 1.8rem !important;
+    margin-bottom: 18px !important;
+  }
+  .skills-container {
+    justify-content: space-between !important;
+  }
+  .skill-span {
+    font-size: 0.9rem !important;
+    margin-bottom: 24px;
+  }
+
+  footer .tag {
+    font-size: 1.3rem;
+  }
+  footer .footer-icon-container {
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+  header {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    padding-top: 36px;
+  }
+  header .info-container {
+    width: 100%;
+    align-items: center;
+  }
+  header .info-container .name {
+    margin-bottom: 10px;
+  }
+  header .info-container .job {
+    font-size: 3.4rem;
+    width: 100%;
+    text-align: center;
+  }
+  header .info-container .description {
+    text-align: center;
+  }
+  .network-container {
+    width: 50% !important;
+    justify-content: space-between !important;
+    margin-bottom: 16%;
+  }
+
+  .projects-container {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .technology {
+    font-size: 0.9rem !important;
+  }
+  .project-name {
+    font-size: 0.9rem !important;
+  }
+}

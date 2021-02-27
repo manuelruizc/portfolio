@@ -2,6 +2,14 @@ body.dark-mode {
   background-color: #181f29;
   position: relative;
 }
+.dark-mode nav .icon-container .light-mode-icon {
+  opacity: 0;
+  transform: scale(0);
+}
+.dark-mode nav .icon-container .dark-mode-icon {
+  opacity: 1;
+  transform: scale(1);
+}
 .dark-mode nav .links-container .nav-link-container a:visited,
 .dark-mode nav .links-container .nav-link-container a:link {
   color: white;
@@ -36,8 +44,8 @@ body.dark-mode {
 .dark-mode .section-title {
   color: white;
 }
-.section-title span:first-of-type,
-.section-title span:last-of-type {
+.dark-mode .section-title span:first-of-type,
+.dark-mode .section-title span:last-of-type {
   -webkit-text-stroke-color: white;
 }
 .dark-mode .see-more a:link,
@@ -64,12 +72,26 @@ body.dark-mode {
   background-color: transparent;
   border: 1pt solid white;
 }
-.dark-mode .footer-icon-container .icon a:link {
-  color: white;
+.dark-mode .footer-icon-container .icon a i {
+  color: white !important;
 }
 .dark-mode .tag {
   color: whitesmoke;
 }
 .dark-mode footer small {
   color: whitesmoke;
+}
+.dark-mode header .hero-image-container {
+  /* background-color: #676cdb; */
+}
+#darkmode-button {
+  cursor: pointer;
+  transition: 0.2 ease-in-out transform;
+  box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.4);
+}
+#darkmode-button:active {
+  transform: scale(1.5);
+}
+.dark-mode #darkmode-button {
+  box-shadow: 5px 3px 10px black !important;
 }
