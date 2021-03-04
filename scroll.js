@@ -17,6 +17,13 @@ new ScrollMagic.Scene({
   .addTo(controller);
 
 new ScrollMagic.Scene({
+  triggerElement: "#about-title",
+})
+  .setClassToggle("#about-title", "section-title--active") // add class toggle
+
+  .addTo(controller);
+
+new ScrollMagic.Scene({
   triggerElement: "#skills-title span:last-of-type",
 })
   .setClassToggle(".skills-container div", "skill--active") // add class toggle

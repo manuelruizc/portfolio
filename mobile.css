@@ -101,6 +101,14 @@
     margin-bottom: 24px;
   }
 
+  .about-me-text {
+    font-size: 1.4rem !important;
+  }
+  .youtube-video-container iframe {
+    width: 70%;
+    height: 50%;
+  }
+
   footer .tag {
     font-size: 1.3rem;
   }
@@ -146,5 +154,14 @@
   }
   .project-name {
     font-size: 0.9rem !important;
+  }
+  .youtube-video-container iframe {
+    height: 60%;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 767px) {
+  .youtube-video-container iframe {
+    width: 70%;
   }
 }
