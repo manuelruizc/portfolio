@@ -39,9 +39,12 @@
 
   .hero-image-container {
     width: 100% !important;
-    background-color: red;
+    height: 50vh !important;
   }
-
+  .square {
+    width: 5vw !important;
+    height: 5vw !important;
+  }
   .section-title,
   .section-title span:first-of-type,
   .section-title span:last-of-type {

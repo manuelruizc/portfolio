@@ -17,7 +17,6 @@ container.addEventListener("mousemove", function (e) {
 container.addEventListener("mouseout", function () {
   for (let i = 0; i < rectangles.length; i++) {
     const rect = rectangles[i];
-    console.log(rect);
     rect.classList.remove("rectangles-out");
   }
   img.style["clip-path"] = "";

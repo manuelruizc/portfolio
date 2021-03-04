@@ -95,3 +95,34 @@ body.dark-mode {
 .dark-mode #darkmode-button {
   box-shadow: 5px 3px 10px black !important;
 }
+
+.dark-mode .rectangles:nth-of-type(1) {
+  background-color: aquamarine;
+}
+.dark-mode .rectangles:nth-of-type(2) {
+  background-color: #676cdb;
+}
+.dark-mode .rectangles:nth-of-type(3) {
+  background-color: #676cdb;
+}
+.dark-mode .rectangles:nth-of-type(4) {
+  background-color: aquamarine;
+}
+.dark-mode .rectangles:nth-of-type(5) {
+  background-color: aquamarine;
+}
+.dark-mode .rectangles:nth-of-type(6) {
+  background-color: #676cdb;
+}
+.dark-mode .rectangles:nth-of-type(7) {
+  background-color: aquamarine;
+}
+.dark-mode .rectangles:nth-of-type(8) {
+  background-color: #676cdb;
+}
+.dark-mode .rectangles:nth-of-type(9) {
+  background-color: aquamarine;
+}
+.dark-mode #illustration {
+  filter: hue-rotate(0deg) !important;
+}
