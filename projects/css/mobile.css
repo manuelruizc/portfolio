@@ -1,0 +1,146 @@
+@media (max-width: 425px) {
+  #darkmode-button {
+    position: fixed;
+    bottom: 14px;
+    right: 18px;
+  }
+  #language-button {
+    position: fixed;
+    bottom: 14px;
+    left: 18px;
+    margin-left: 0;
+  }
+  .links-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-link-container {
+    margin: 0 !important;
+  }
+  .nav-link {
+    font-size: 0.7rem !important;
+    white-space: nowrap !important;
+    margin: 0;
+  }
+  footer .tag {
+    font-size: 1.3rem;
+  }
+  footer .footer-icon-container {
+    width: 35%;
+  }
+
+  .project-header {
+    height: calc(50vh - 90px);
+    margin-bottom: 53vh;
+    position: relative;
+  }
+  .project-header-overlay {
+    background: none !important;
+  }
+  .project-data-container {
+    padding: 8% 0px !important;
+    position: absolute;
+    height: 50vh !important;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    padding: 0;
+  }
+  .project-main-data {
+    width: 100% !important;
+    align-items: center;
+  }
+  .project-name {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  .project-description {
+    font-size: 0.8rem !important;
+    max-width: 100% !important;
+    width: 90% !important;
+    text-align: center;
+  }
+
+  .component-description-container {
+    align-items: center;
+  }
+  .component-description-title {
+    text-align: center;
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  .component-description-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .component-description-screenshot {
+    height: 28vh;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+  .project-header {
+    height: 46vh !important;
+    padding: 4.5% 0px;
+  }
+  .project-name {
+    font-size: 1.6rem;
+  }
+  .project-description {
+    font-size: 1.1rem;
+  }
+  .project-buttons-container a {
+    font-size: 1rem !important;
+  }
+  .component-description-container {
+    align-items: center;
+  }
+  .component-description-title {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+  }
+  .component-description-text {
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: center;
+  }
+  .component-description-screenshot {
+    height: 42vh;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 767px) {
+  .project-header {
+    height: 84vh !important;
+    padding: 4.5% 0px;
+  }
+  .project-name {
+    font-size: 1.6rem;
+  }
+  .project-description {
+    font-size: 1.1rem;
+  }
+  .project-buttons-container a {
+    font-size: 1rem !important;
+  }
+  .component-description-container {
+    align-items: center;
+  }
+  .component-description-title {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+  }
+  .component-description-text {
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: center;
+  }
+  .component-description-screenshot {
+    height: 68vh;
+  }
+}

@@ -18,12 +18,17 @@
     <link rel="stylesheet" href="./mobile.css" />
   </head>
   <body id="body">
-    <div class="sheet"></div>
     <!-- Begin navigation -->
     <nav>
-      <div id="darkmode-button" class="icon-container">
-        <i class="fa fa-moon-o dark-mode-icon"></i>
-        <i class="fa fa-sun-o light-mode-icon"></i>
+      <div class="toggle-buttons-container">
+        <div id="darkmode-button" class="icon-container">
+          <i class="fa fa-moon-o dark-mode-icon"></i>
+          <i class="fa fa-sun-o light-mode-icon"></i>
+        </div>
+        <div class="icon-container" id="language-button">
+          <span class="en">en</span>
+          <span class="es">es</span>
+        </div>
       </div>
       <div class="links-container">
         <div
@@ -39,7 +44,7 @@
         </div>
         <div id="about" class="nav-link-container">
           <div class="active-nav-link"></div>
-          <a href="#about-title" class="nav-link">About</a>
+          <a href="#about-title" class="nav-link">About me</a>
         </div>
       </div>
     </nav>
@@ -48,7 +53,9 @@
     <header>
       <div class="info-container">
         <span id="name" class="name">Manuel Ruiz Cedillo</span>
-        <span class="job">Software <span>Engineer</span></span>
+        <span class="job"
+          >Software <span class="outlined-text">Engineer</span></span
+        >
         <span class="description"
           >I am a software developer, with a great passion for web, mobile and
           database technologies. I like to solve problems that arise in software
@@ -93,83 +100,91 @@
     <!-- Begins Projects -->
     <div class="projects section" id="projects-title">
       <h3 class="section-title" id="projects-title">
-        <span>Projects</span>
-        <span>Projects</span>
-        <span>Projects</span>
+        <span data-text="Projects">Projects</span>
+        <span data-text="Projects">Projects</span>
+        <span data-text="Projects">Projects</span>
       </h3>
       <div class="projects-container">
         <div class="small-project-container sm-p1">
           <div class="project-title-container">
-            <span class="technology">Mobile app</span>
+            <span class="technology" data-text="Mobile app">Mobile app</span>
             <h3 class="project-name">Mobile music player</h3>
           </div>
           <div class="project-links-container">
             <div class="project-link">
-              <a href="#" class="project-link-anchor">Repository</a>
+              <a href="#" class="project-link-anchor" data-text="Repository"
+                >Repository</a
+              >
             </div>
             <div class="project-link">
-              <a href="#" class="project-link-anchor">Demo</a>
+              <a href="#" class="project-link-anchor" data-text="Demo">Demo</a>
             </div>
           </div>
           <div class="project-thumbnail"></div>
         </div>
         <div class="regular-project-container md-p1">
           <div class="project-title-container">
-            <span class="technology">Web app</span>
+            <span class="technology" data-text="Web app">Web app</span>
             <h3 class="project-name">Youtube Clone</h3>
           </div>
           <div class="project-links-container">
             <div class="project-link">
-              <a href="#" class="project-link-anchor">Repository</a>
+              <a href="#" class="project-link-anchor" data-text="Repository"
+                >Repository</a
+              >
             </div>
             <div class="project-link">
-              <a href="#" class="project-link-anchor">Demo</a>
+              <a href="#" class="project-link-anchor" data-text="Demo">Demo</a>
             </div>
           </div>
           <div class="project-thumbnail"></div>
         </div>
         <div class="small-project-container sm-p2">
           <div class="project-title-container">
-            <span class="technology">Web app</span>
+            <span class="technology" data-text="Web app">Web app</span>
             <h3 class="project-name">Mobile music player</h3>
           </div>
           <div class="project-links-container">
             <div class="project-link">
-              <a href="#" class="project-link-anchor">Repository</a>
+              <a href="#" class="project-link-anchor" data-text="Repository"
+                >Repository</a
+              >
             </div>
             <div class="project-link">
-              <a href="#" class="project-link-anchor">Demo</a>
+              <a href="#" class="project-link-anchor" data-text="Demo">Demo</a>
             </div>
           </div>
           <div class="project-thumbnail"></div>
         </div>
         <div class="regular-project-container md-p2">
           <div class="project-title-container">
-            <span class="technology">React.js library</span>
+            <span class="technology" data-text="Library">Library</span>
             <h3 class="project-name">react-stat-maps</h3>
           </div>
           <div class="project-links-container">
             <div class="project-link">
-              <a href="#" class="project-link-anchor">Repository</a>
+              <a href="#" class="project-link-anchor" data-text="Repository"
+                >Repository</a
+              >
             </div>
             <div class="project-link">
-              <a href="#" class="project-link-anchor">Demo</a>
+              <a href="#" class="project-link-anchor" data-text="Demo">Demo</a>
             </div>
           </div>
           <div class="project-thumbnail"></div>
         </div>
       </div>
       <div class="see-more">
-        <a href="#">See GitHub</a>
+        <a href="#" data-text="See Github">See GitHub</a>
       </div>
     </div>
     <!-- Ends Projects -->
     <!-- Begins Skills -->
     <div class="skills section">
       <h3 class="section-title" id="skills-title">
-        <span>Skills</span>
-        <span>Skills</span>
-        <span>Skills</span>
+        <span data-text="skills">Skills</span>
+        <span data-text="skills">Skills</span>
+        <span data-text="skills">Skills</span>
       </h3>
       <div class="skills-wrapper">
         <span class="skills-title">Front End</span>
@@ -198,7 +213,7 @@
         </div>
       </div>
       <div class="skills-wrapper">
-        <span class="skills-title">Others</span>
+        <span class="skills-title others-title">Others</span>
         <div class="skills-container">
           <div class="skill-span">Git</div>
           <div class="skill-span">GitHub</div>
@@ -216,7 +231,7 @@
         </div>
       </div>
       <div class="skills-wrapper">
-        <span class="skills-title">Languages</span>
+        <span class="skills-title languages-title">Languages</span>
         <div class="skills-container">
           <div class="skill-span">Spanish</div>
           <div class="skill-span">English</div>
@@ -227,9 +242,9 @@
     <!-- Begin About Section -->
     <div class="about section">
       <h3 class="section-title" id="about-title">
-        <span>About me</span>
-        <span>About me</span>
-        <span>About me</span>
+        <span data-text="About me">About me</span>
+        <span data-text="About me">About me</span>
+        <span data-text="About me">About me</span>
       </h3>
       <div class="about-me-container">
         <span class="about-me-text">
@@ -272,6 +287,8 @@
     <div class="technology-logo-container" id="technology-logo-container">
       <div id="cursor-background"></div>
     </div>
+    <script type="text/javascript" src="./locales/languages.js"></script>
+    <script type="text/javascript" src="./languageSelection.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
     <script src="./scroll.js"></script>

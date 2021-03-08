@@ -2,6 +2,9 @@ body.dark-mode {
   background-color: #181f29;
   position: relative;
 }
+.dark-mode nav {
+  background-color: rgb(24, 31, 41, 0.95);
+}
 .dark-mode nav .icon-container .light-mode-icon {
   opacity: 0;
   transform: scale(0);
@@ -89,10 +92,15 @@ body.dark-mode {
   transition: 0.2 ease-in-out transform;
   box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.4);
 }
-#darkmode-button:active {
+#darkmode-button:active,
+#language-button:active {
   transform: scale(1.5);
 }
-.dark-mode #darkmode-button {
+.dark-mode #language-button {
+  color: whitesmoke;
+}
+.dark-mode #darkmode-button,
+.dark-mode #language-button {
   box-shadow: 5px 3px 10px black !important;
 }
 
@@ -125,4 +133,7 @@ body.dark-mode {
 }
 .dark-mode #illustration {
   filter: hue-rotate(0deg) !important;
+}
+.dark-mode .about-me-text {
+  color: whitesmoke;
 }

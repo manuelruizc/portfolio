@@ -1,0 +1,142 @@
+.project-header {
+  width: 100%;
+  height: calc(100vh - 90px);
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.project-header img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 0;
+}
+.project-header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 47.88%);
+  z-index: 1;
+}
+.project-data-container {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 4%;
+}
+.project-main-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.project-name {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: black;
+}
+.project-description {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: black;
+  text-align: right;
+  max-width: 50%;
+  font-weight: 100;
+  margin-top: 26px;
+}
+
+.component-description-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5% 0px;
+}
+.component-description-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  margin-bottom: 3%;
+  padding: 0px 8%;
+}
+.component-description-text {
+  line-height: 2.2rem;
+  font-size: 1.4rem;
+  font-weight: 10;
+  padding: 0px 8%;
+  width: 90%;
+}
+.component-description-screenshot {
+  width: 100%;
+  height: 100vh;
+  margin-top: 6%;
+}
+.component-description-screenshot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-buttons-container a:link,
+.project-buttons-container a:visited {
+  text-decoration: none;
+  padding: 12px 40px;
+  font-size: 1.2rem;
+  color: black;
+  border: 1pt solid black;
+  border-radius: 500px;
+}
+.project-buttons-container a:nth-of-type(1) {
+  margin-right: 32px;
+}
+.project-buttons-container a:hover {
+  background-color: black;
+  color: white;
+  border: 1pt solid transparent;
+}
+
+.dark-mode .project-header-overlay {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #181f29 47.88%);
+}
+.dark-mode .project-main-data span {
+  color: whitesmoke;
+}
+.dark-mode .project-name,
+.dark-mode .project-description {
+  /* background-color: aquamarine; */
+}
+.dark-mode .component-description-title,
+.dark-mode .component-description-text {
+  color: whitesmoke;
+}
+.dark-mode .project-buttons-container a {
+  color: white;
+  border: 1pt solid white;
+}
+.dark-mode .project-buttons-container a:hover {
+  background-color: white;
+  color: black;
+  border: 1pt solid transparent;
+}
+
+.last-component {
+  padding: 5% 0px 0px 0px;
+}
+footer {
+  margin: 0 !important;
+}

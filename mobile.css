@@ -4,6 +4,26 @@
     bottom: 14px;
     right: 18px;
   }
+  #language-button {
+    position: fixed;
+    bottom: 14px;
+    left: 18px;
+    margin-left: 0;
+  }
+  .links-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-link-container {
+    margin: 0 !important;
+  }
+  .nav-link {
+    font-size: 0.7rem !important;
+    white-space: nowrap !important;
+    margin: 0;
+  }
   header {
     flex-wrap: wrap;
     padding: 0;
@@ -20,8 +40,8 @@
   }
   header .info-container .job {
     text-align: center;
-    width: 100%;
-    font-size: 3.3rem;
+    width: 80%;
+    font-size: 2.4rem;
   }
   header .info-container .description {
     text-align: center;

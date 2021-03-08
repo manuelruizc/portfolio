@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile player - Manuel Ruiz Cedillo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../index.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/mobile.css" />
+    <link rel="stylesheet" href="../../darkmode.css" />
+  </head>
+  <body id="body">
+    <!-- Begin navigation -->
+    <nav>
+      <div class="toggle-buttons-container">
+        <div id="darkmode-button" class="icon-container">
+          <i class="fa fa-moon-o dark-mode-icon"></i>
+          <i class="fa fa-sun-o light-mode-icon"></i>
+        </div>
+        <div class="icon-container" id="language-button">
+          <span class="en">en</span>
+          <span class="es">es</span>
+        </div>
+      </div>
+      <div class="links-container">
+        <div
+          id="projects"
+          class="nav-link-container nav-link-container--active"
+        >
+          <div class="active-nav-link"></div>
+          <a class="nav-link" href="#projects-title">Projects</a>
+        </div>
+        <div id="skills" class="nav-link-container">
+          <div class="active-nav-link"></div>
+          <a class="nav-link" href="#skills-title">Skills</a>
+        </div>
+        <div id="about" class="nav-link-container">
+          <div class="active-nav-link"></div>
+          <a href="#about-title" class="nav-link">About me</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Ends navigation -->
+    <!-- Begin header -->
+    <div class="project-header">
+      <img src="../../assets/Screenshot.png" />
+      <div class="project-header-overlay"></div>
+      <div class="project-data-container">
+        <div class="project-main-data">
+          <span class="project-name">Mobile player</span>
+          <span class="project-description">
+            A mobile player to listen and download Youtube videos on mp3, create
+            playlists and listen offline.
+          </span>
+        </div>
+        <div class="project-buttons-container">
+          <a href="#">Github</a>
+          <a href="http://www.clonetube.me" target="_blank">Demo</a>
+        </div>
+      </div>
+    </div>
+    <!-- Ends header -->
+    <!-- Begin description -->
+    <div class="component-description-container">
+      <h3 class="component-description-title">
+        This project is made for personal use
+      </h3>
+      <span class="component-description-text">
+        This was the first app or mobile app that I did with React/React Native,
+        I'm currently rewriting the codebase with the React hooks API, you can
+        download the apk file <a href="#">here</a>. I made this project to have
+        the ability to listen to youtube videos offline and when locking the
+        phone screen or using other apps.
+        <br />
+        <br />
+        <b>
+          This app was not created to generate profit or to use as an
+          alternative to the official YouTube channel. This app is intended for
+          personal use and to show software development skills. Is not intended
+          for generationg profit or to use instead of the official YouTube
+          services. I encourage everyone to use the official YouTube services
+          instead of this app as this app is only made to show React Native
+          performance and to show personal skills to employers.
+        </b>
+      </span>
+      <div class="component-description-screenshot">
+        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+      </div>
+    </div>
+    <!-- Ends description -->
+    <!-- Begin description -->
+    <div class="component-description-container last-component">
+      <h3 class="component-description-title">
+        Read the documentation and video example
+      </h3>
+      <span class="component-description-text">
+        You can see a live example <a href="#">here</a>, and read the library
+        documentation on the github repository.
+        <br />
+        <br />
+        <b>
+          The web services of this app are not available to prevent bad use of
+          them. As they include website scraping.
+        </b>
+      </span>
+      <div class="component-description-screenshot">
+        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+      </div>
+    </div>
+    <!-- Ends description -->
+    <!-- Begins Footer -->
+    <footer>
+      <span class="tag">Let's work together!</span>
+      <div class="footer-icon-container">
+        <div class="icon">
+          <a href="#">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="#">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <small>México 2020-2021<br />Made by Manuel Ruiz</small>
+    </footer>
+    <!-- Ends Footer -->
+    <div class="technology-logo-container" id="technology-logo-container">
+      <div id="cursor-background"></div>
+    </div>
+    <!-- <script type="text/javascript" src="../../locales/languages.js"></script> -->
+    <script src="../js/locales.js"></script>
+    <script src="../js/language.js"></script>
+    <script src="../../darkmode.js"></script>
+    <!-- <script type="text/javascript" src="../../languageSelection.js"></script> -->
+  </body>
+</html>

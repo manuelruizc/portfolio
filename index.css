@@ -7,6 +7,7 @@
 }
 body {
   padding-top: 90px;
+  overflow-x: hidden;
 }
 nav {
   width: 100%;
@@ -20,10 +21,51 @@ nav {
   left: 0;
   transition: 250ms ease-in-out all;
   z-index: 9999999;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 .nav--active {
   background-color: rgba(255, 255, 255, 0.95);
   height: 65px;
+}
+nav .toggle-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#language-button {
+  margin-left: 32px;
+  transition: 0.2 ease-in-out transform;
+  box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.4);
+  color: black;
+  position: relative;
+  cursor: pointer;
+}
+#language-button span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+#language-button .en {
+  opacity: 1;
+  transform: scale(1);
+}
+#language-button .es {
+  opacity: 0;
+  transform: scale(0);
+}
+#language-button.spanish--active .en {
+  opacity: 0;
+  transform: scale(0);
+}
+#language-button.spanish--active .es {
+  opacity: 1;
+  transform: scale(1);
 }
 nav .icon-container {
   width: 50px;
@@ -51,7 +93,7 @@ nav .icon-container .dark-mode-icon {
   padding-left: 2px;
 }
 nav .icon-container .light-mode-icon {
-  color: rgb(214, 161, 62);
+  color: rgb(223, 172, 78);
   font-weight: 700;
 }
 nav .links-container {
@@ -355,11 +397,11 @@ header .clip-hero-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: cadetblue;
+  border: 1pt solid white;
   transition: 300ms ease-in-out all;
 }
 .project-links-container .project-link:hover {
-  background-color: #9842d4;
+  background-color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 .project-links-container .project-link a:visited,
@@ -390,7 +432,7 @@ header .clip-hero-image {
   background-color: teal;
 }
 .sm-p1 {
-  background-color: #9842d4;
+  background-color: #f3bac7;
 }
 .regular-project-container .project-thumbnail,
 .small-project-container .project-thumbnail {
@@ -410,13 +452,13 @@ header .clip-hero-image {
   opacity: 0;
 }
 .md-p1 {
-  background-color: #ebc552;
+  background-color: #88e894;
 }
 .sm-p2 {
-  background-color: #357bb8;
+  background-color: #ff6861;
 }
 .md-p2 {
-  background-color: #439deb;
+  background-color: #97d5fe;
 }
 .sm-p1:hover {
   width: 69.4%;
