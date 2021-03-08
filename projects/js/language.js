@@ -26,22 +26,35 @@ function setLocales(lng) {
   for (let i = 0; i < componentDescriptionContainer.length; i++) {
     const children = componentDescriptionContainer[i].children;
     let descriptionArray = [];
+    let titlesArray = [];
     for (let j = 0; j < children.length; j++) {
       const childrenValue = children[j];
       if (j === 0) {
-        descriptionTitle.push(childrenValue);
+        titlesArray.push(childrenValue);
         continue;
       }
       if (childrenValue.classList.contains("component-description-text")) {
         descriptionArray.push(childrenValue);
       }
     }
+    descriptionTitle.push(titlesArray);
     descriptionTexts.push(descriptionArray);
     descriptionArray = [];
+    titlesArray = [];
   }
-  descriptionTitle.forEach((title) => {
-    title.textContent = locales[projectName].body.title[lng];
-  });
+  for (let i = 0; i < descriptionTitle.length; i++) {
+    const titlesArray = descriptionTitle[i];
+    let title;
+    if (titlesArray.length === 1) {
+      title = titlesArray[0];
+      console.log(locales[projectName].body.titles[i][lng]);
+      title.innerHTML = locales[projectName].body.titles[i][lng];
+      continue;
+    }
+    titlesArray.forEach((title, index) => {
+      title.innerHTML = locales[projectName].body.titles[i][index][lng];
+    });
+  }
   for (let i = 0; i < descriptionTexts.length; i++) {
     const descriptionArray = descriptionTexts[i];
     let description;
@@ -51,6 +64,7 @@ function setLocales(lng) {
       continue;
     }
     descriptionArray.forEach((desc, index) => {
+      console.log(locales[projectName].body.descriptions);
       desc.innerHTML = locales[projectName].body.descriptions[i][index][lng];
     });
   }
