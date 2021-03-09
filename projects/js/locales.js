@@ -347,7 +347,62 @@ const locales = {
       ],
     },
   },
-  ecommerce: {},
+  ecommerce: {
+    header: {
+      title: {
+        en: "E-commerce (Shopify)",
+        es: "Tienda e-commerce (Shopify)",
+      },
+      description: {
+        en:
+          "An e-commerce website I made for a client, it was developed for a plant nursery business.",
+        es:
+          "Un sitio web de comercio electrónico que hice para un cliente, fue desarrollado para un negocio de vivero de plantas.",
+      },
+    },
+    body: {
+      titles: [
+        {
+          en: "E-commerce",
+          es: "E-commerce",
+        },
+        {
+          en: "Live example",
+          es: "Ejemplo en línea",
+        },
+      ],
+      descriptions: [
+        [
+          {
+            en: `I got the opportunity to use the e-commerce website I developed to show
+            my skills with the Liquid (Shopify) language, as well as my HTML, CSS
+            and JS skills. The original project was made for a plant nursery
+            business, but to show it to potential employers I change the theme of
+            the store to clothing, also the index page is totally different to the
+            original project one.<br>
+            It's composed by an index page used as the landing page, a search page, a product page,
+            a collections page and a cart that uses the Shopify AJAX API.`,
+            es: `Tuve la oportunidad de usar esta tienda en línea que desarrollé, para mostrar
+            mis habilidades con el lenguaje Liquid (Shopify), también como con HTML, CSS y JS. El proyecto
+            original fue desarrollado para un negocio de viveros, pero para mostrar mi trabajo a empleadores
+            potenciales, cambié el tema de la tienda un negocio de ropa, además de que la pagina de inicio es
+            completamente diferente a la del proyecto original. <br>
+            La tienda esta compuesta por una landing page, una pagina de búsqueda, una página de producto,
+            una página para mostrar colecciones de productos y un carrito de compra que utiliza la API AJAX de 
+            Shopify.`,
+          },
+        ],
+        [
+          {
+            en: `You can see a live example <a href="#">here</a>. You will need a password.<br><br>
+            <b>Password</b>: demopassword`,
+            es: `Puedes ver un ejemplo online <a href="#">aquí</a>. Necesitarás una contraseña.<br><br>
+            <b>Contraseña</b>: demopassword`,
+          },
+        ],
+      ],
+    },
+  },
   // done
   mobileplayer: {
     header: {

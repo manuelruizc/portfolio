@@ -74,6 +74,7 @@ let userLanguage = localStorage.getItem("userLanguage");
 if (!userLanguage) {
   userLanguage = navigator.language || navigator.userLanguage;
 }
+userLanguage = userLanguage.substr(0, 2);
 const languageButton = document.getElementById("language-button");
 
 languageButton.addEventListener("click", function () {
