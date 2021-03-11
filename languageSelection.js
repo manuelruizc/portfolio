@@ -46,6 +46,12 @@ function setLocales(lng) {
       currentClassElement.textContent = locales[section][titleText][lng];
     }
   }
+  const portfolioName = document.getElementById("portfolioname");
+  const mobileplayerName = document.getElementById("mobileplayername");
+  portfolioName.textContent = locales.projects.portfolio[lng];
+  mobileplayerName.textContent = locales.projects.mobileplayer[lng];
+  const tag = document.getElementById("tag");
+  tag.textContent = locales.footer.header[lng];
 }
 
 function initialLocalesSetting(lang) {

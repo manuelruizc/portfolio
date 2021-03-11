@@ -17,6 +17,51 @@
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/mobile.css" />
     <link rel="stylesheet" href="../../darkmode.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./darkmode.css" />
+    <link rel="stylesheet" href="./mobile.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body id="body">
     <!-- Begin navigation -->
@@ -37,22 +82,28 @@
           class="nav-link-container nav-link-container--active"
         >
           <div class="active-nav-link"></div>
-          <a class="nav-link" href="#projects-title">Projects</a>
+          <a class="nav-link" href="/#projects-title">Projects</a>
         </div>
         <div id="skills" class="nav-link-container">
           <div class="active-nav-link"></div>
-          <a class="nav-link" href="#skills-title">Skills</a>
+          <a class="nav-link" href="/#skills-title">Skills</a>
         </div>
         <div id="about" class="nav-link-container">
           <div class="active-nav-link"></div>
-          <a href="#about-title" class="nav-link">About me</a>
+          <a href="/#about-title" class="nav-link">About me</a>
         </div>
       </div>
     </nav>
     <!-- Ends navigation -->
+    <div class="technologies">
+      <span>React Native</span>
+      <span>React</span>
+      <span>JavaScript</span>
+      <span>Android Studio</span>
+    </div>
     <!-- Begin header -->
     <div class="project-header">
-      <img src="../../assets/Screenshot.png" />
+      <img src="./assets/screenshot1.png" />
       <div class="project-header-overlay"></div>
       <div class="project-data-container">
         <div class="project-main-data">
@@ -63,8 +114,12 @@
           </span>
         </div>
         <div class="project-buttons-container">
-          <a href="#">Github</a>
-          <a href="http://www.clonetube.me" target="_blank">Demo</a>
+          <a
+            href="https://github.com/manuelruizc/mobile-audio-player"
+            target="_blank"
+            >Github</a
+          >
+          <a href="/projects/mobileplayer/#seevideobtn">Demo</a>
         </div>
       </div>
     </div>
@@ -93,7 +148,7 @@
         </b>
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot1.png" alt="Homepage screenshot" />
       </div>
     </div>
     <!-- Ends description -->
@@ -112,27 +167,40 @@
           them. As they include website scraping.
         </b>
       </span>
-      <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+      <div class="component-description-screenshot" id="insertvideo">
+        <span
+          >Descarga el archivo apk para probar el app
+          <a href="#">aquí</a>.</span
+        >
+        <br />
+        <a href="#" id="seevideobtn">Ver video del funcionamiento del app</a>
       </div>
     </div>
     <!-- Ends description -->
     <!-- Begins Footer -->
     <footer>
-      <span class="tag">Let's work together!</span>
+      <span class="tag" id="tag">Let's work together!</span>
       <div class="footer-icon-container">
         <div class="icon">
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/in/mannyruizwebdev/"
+            target="_blank"
+          >
             <i class="fa fa-linkedin"></i>
           </a>
         </div>
         <div class="icon">
-          <a href="#">
+          <a href="mailto:manuelruizcd@gmail.com">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://github.com/manuelruizc" target="_blank">
             <i class="fa fa-github"></i>
           </a>
         </div>
       </div>
-      <small>México 2020-2021<br />Made by Manuel Ruiz</small>
+      <small>México <span id="year"></span><br />Manuel Ruiz Cedillo</small>
     </footer>
     <!-- Ends Footer -->
     <div class="technology-logo-container" id="technology-logo-container">
@@ -141,5 +209,38 @@
     <script src="../js/locales.js"></script>
     <script src="../js/language.js"></script>
     <script src="../../darkmode.js"></script>
+    <script>
+      const videoSectionHTML = `<div class="video-showcase-container">
+        <div class="video-container">
+          <video
+          autoplay
+          controls
+          src="./assets/mobileplayervideo.mp4"
+          id="video"
+          ></video>
+          <a class="videoratebutton" href="#" id="ratebtn">Vel. x2</a>
+          </div>
+          </div>`;
+      const seeVideoBtn = document.getElementById("seevideobtn");
+      seeVideoBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        const parentHTML = document.getElementById("insertvideo");
+        parentHTML.innerHTML = videoSectionHTML;
+        const btn = document.getElementById("ratebtn");
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+          const video = document.getElementById("video");
+          if (video) {
+            if (video.playbackRate === 1) {
+              video.playbackRate = 2;
+              btn.textContent = "Vel. x1";
+            } else {
+              video.playbackRate = 1;
+              btn.textContent = "Vel. x2";
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>

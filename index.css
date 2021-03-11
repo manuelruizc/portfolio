@@ -4,8 +4,17 @@
   box-sizing: border-box;
   font-family: "Roboto";
   transition: 0.3s ease-in-out all;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 body {
+  width: 100%;
+  max-width: 100vw;
   padding-top: 90px;
   overflow-x: hidden;
 }
@@ -39,6 +48,10 @@ nav .toggle-buttons-container {
   color: black;
   position: relative;
   cursor: pointer;
+}
+#language-button,
+#darmode-button {
+  transition: 0.15s linear all !important;
 }
 #language-button span {
   position: absolute;
@@ -193,15 +206,15 @@ header .info-container .network-container .network-link {
   margin-right: 22px;
   text-decoration: none;
   color: black;
-  transition: ease-in-out 250ms all;
+  transition: linear 250ms all !important;
 }
 header .info-container .network-container .network-link:hover {
-  background-color: blueviolet;
+  background-color: #676cdb;
   color: white;
 }
 header .info-container .network-container .network-link i {
   font-size: 1.6rem;
-  transition: 250ms ease-in-out color;
+  transition: 250ms ease-in-out color !important;
 }
 header .hero-image-container {
   width: 50vw;
@@ -215,7 +228,7 @@ header .hero-image-container {
   position: absolute;
   top: 0;
   left: 0;
-  filter: hue-rotate(100deg);
+  filter: hue-rotate(270deg);
   transition: 0.2s linear all;
 }
 header .clip-hero-image {
@@ -383,36 +396,47 @@ header .clip-hero-image {
   align-items: center;
   transition: 300ms ease-in-out all;
   transform: translateX(0);
+  border: 1pt so;
 }
 .small-project-container .project-links-container {
   opacity: 0;
   transform: translateX(-80%);
 }
-.project-links-container .project-link,
-.project-links-container .project-link {
-  width: 90px;
+.small-project-container .project-links-container .project-link,
+.regular-project-container .project-links-container .project-link {
   height: 32px;
   border-radius: 60px;
-  padding: 0px 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1pt solid white;
   transition: 300ms ease-in-out all;
+  margin-left: 10px;
+  display: grid;
+  place-items: center;
 }
 .project-links-container .project-link:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(0, 0, 0, 0.3); */
   cursor: pointer;
 }
 .project-links-container .project-link a:visited,
 .project-links-container .project-link a:link {
   text-decoration: none;
+  padding: 0px 20px;
   color: white;
   font-size: 0.85rem;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
 }
-.small-project-container .project-links-container .project-link:last-of-type,
-.regular-project-container .project-links-container .project-link:last-of-type {
-  margin-left: 10px;
+.small-project-container .project-links-container .project-link:first-of-type,
+.regular-project-container
+  .project-links-container
+  .project-link:first-of-type {
+  margin-left: 0px;
 }
 .small-project-container .technology,
 .regular-project-container .technology {
@@ -447,18 +471,68 @@ header .clip-hero-image {
   right: 0px;
   transition: 150ms ease-in all;
   transition-delay: 0ms;
+  z-index: 0;
 }
 .small-project-container .project-thumbnail {
   opacity: 0;
 }
+.react-maps-thumb {
+  background-image: url("./assets/react-stats-maps.png") !important;
+  width: 40% !important;
+  height: 250px !important;
+  right: 40px !important;
+  bottom: 0 !important;
+}
+.ecommerce-thumb {
+  background-image: url("./assets/ecommerce.png") !important;
+  width: 40% !important;
+  height: 250px !important;
+  right: 40px !important;
+  bottom: 0 !important;
+}
+.clonetube-thumb {
+  background-image: url("./assets/clonetube.png") !important;
+  width: 40% !important;
+  height: 250px !important;
+  right: 40px !important;
+  bottom: 0 !important;
+}
+.cokeapp-thumb {
+  background-image: url("./assets/cokeapp.png") !important;
+  width: 40% !important;
+  height: 250px !important;
+  right: 40px !important;
+  bottom: 0 !important;
+}
+.portfolio-thumb {
+  background-image: url("./assets/portfolio.png") !important;
+  width: 40% !important;
+  height: 250px !important;
+  right: 40px !important;
+  bottom: 0 !important;
+}
+.mobileplayer-thumb {
+  background-image: url("./assets/mobileplayer.png") !important;
+  width: 40% !important;
+  height: 250px !important;
+  right: 40px !important;
+  bottom: 0 !important;
+}
 .md-p1 {
-  background-color: #88e894;
+  background-color: #97d5fe;
 }
 .sm-p2 {
   background-color: #ff6861;
 }
+.sm-p3 {
+  background-color: #dfccf0;
+}
 .md-p2 {
-  background-color: #97d5fe;
+  background-color: #88e894;
+}
+.md-p3 {
+  background-color: #f4f7ae;
+  color: black !important;
 }
 .sm-p1:hover {
   width: 69.4%;
@@ -480,16 +554,40 @@ header .clip-hero-image {
   transform: translateX(-80%);
   opacity: 0;
 }
+.project-link:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.md-p3 .project-link {
+  border: 1pt solid black !important;
+}
+.md-p3 .project-link a {
+  color: black !important;
+}
+.md-p3 .project-link a:hover {
+  color: white !important;
+}
 .sm-p1:hover + .md-p1 {
   width: 29.4%;
 }
 .sm-p2 {
   order: 4;
 }
+.sm-p3 {
+  order: 5;
+}
+.md-p3 {
+  order: 6;
+}
 .sm-p2:hover {
   width: 69.4%;
 }
 .sm-p2:hover + .md-p2 {
+  width: 29.4%;
+}
+.sm-p3:hover {
+  width: 69.4%;
+}
+.sm-p3:hover + .md-p3 {
   width: 29.4%;
 }
 .see-more {
@@ -507,6 +605,8 @@ header .clip-hero-image {
   font-weight: 400;
   font-size: 1.4rem;
   position: relative;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
   transition: 250ms ease-in-out all;
 }
 .see-more a:hover {
@@ -656,7 +756,16 @@ footer .tag {
   width: 46px;
   height: 46px;
   border-radius: 100%;
+  border: 1pt solid #676cdb;
+}
+.footer-icon-container .icon:hover {
   background-color: #676cdb;
+}
+.footer-icon-container .icon a i {
+  color: #676cdb;
+}
+.footer-icon-container .icon:hover a i {
+  color: black;
 }
 .footer-icon-container .icon a:visited,
 .footer-icon-container .icon a:link {

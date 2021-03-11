@@ -47,7 +47,6 @@ function setLocales(lng) {
     let title;
     if (titlesArray.length === 1) {
       title = titlesArray[0];
-      console.log(locales[projectName].body.titles[i][lng]);
       title.innerHTML = locales[projectName].body.titles[i][lng];
       continue;
     }
@@ -64,10 +63,11 @@ function setLocales(lng) {
       continue;
     }
     descriptionArray.forEach((desc, index) => {
-      console.log(locales[projectName].body.descriptions);
       desc.innerHTML = locales[projectName].body.descriptions[i][index][lng];
     });
   }
+  const tag = document.getElementsByClassName("tag")[0];
+  tag.textContent = locales.footer.header[lng];
 }
 
 let userLanguage = localStorage.getItem("userLanguage");

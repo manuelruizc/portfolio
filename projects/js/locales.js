@@ -1,5 +1,4 @@
 const locales = {
-  // done
   nav: {
     ["about me"]: {
       en: "About me",
@@ -14,7 +13,6 @@ const locales = {
       es: "Habilidades",
     },
   },
-  // done
   clonevideo: {
     header: {
       title: {
@@ -314,7 +312,6 @@ const locales = {
       ],
     },
   },
-  // done
   cokeapp: {
     header: {
       title: {
@@ -325,7 +322,7 @@ const locales = {
         en:
           "Coca cola app prototype animations I made on React Native using the React Native Animated API.",
         es:
-          "Prototip de app de Coca cola que realice con React Native utilizando el API Animated de React Native.",
+          "Prototipo de app de Coca cola que realice con React Native utilizando el API Animated de React Native.",
       },
     },
     body: {
@@ -334,14 +331,30 @@ const locales = {
           en: "Why this app?",
           es: "¿Por qué esta app?",
         },
+        {
+          en: "Watch the process",
+          es: "Mira el proceso",
+        },
       ],
       descriptions: [
         [
           {
             en: `Inspired by the React Native Animated API, I decided to develop this app and share it with the React Native
-              community and show the process.`,
+              community and show the process. This project is inside the top 20 of most voted posts in the React Native subreddit in Reddit.com,
+              you can take a look <a target="_blank" href="https://www.reddit.com/r/reactnative/comments/hkfdlw/i_tried_to_recreate_a_uiux_prototype_i_watched_on/">here<a/>.`,
             es: `Inspirado por las animaciones en React Native, decidí realizar esta app y compartirla con la comunidad y mostrar
-              el proceso de desarrollo.`,
+              el proceso de desarrollo. Este proyecto se encuentra dentro del top 20 de publicaciones más votadas en el subreddit de React Native en
+              Reddit.com, puedes ver el post y el funcionamiento de la app <a target="_blank" href="https://www.reddit.com/r/reactnative/comments/hkfdlw/i_tried_to_recreate_a_uiux_prototype_i_watched_on/">aquí<a/>`,
+          },
+        ],
+        [
+          {
+            en: `You can see the process on my YouTube channel<br>
+            <a href="https://www.youtube.com/watch?v=5SwPHjdyKc4" target="_blank">Here is the first part</a> <br>
+            <a href="https://www.youtube.com/watch?v=CkqI9NeJinw" target="_blank">And here is the second part</a>.`,
+            es: `Puedes observar el proceso en mi canal de YouTube<br>
+            <a href="https://www.youtube.com/watch?v=5SwPHjdyKc4" target="_blank">La primera parte</a> <br>
+            <a href="https://www.youtube.com/watch?v=CkqI9NeJinw" target="_blank">Y aquí se encuentra la segunda parte</a>.`,
           },
         ],
       ],
@@ -394,16 +407,15 @@ const locales = {
         ],
         [
           {
-            en: `You can see a live example <a href="#">here</a>. You will need a password.<br><br>
+            en: `You can see a live example <a href="https://tienda-de-lu-dev.myshopify.com/" target="_blank">here</a>. You will need a password.<br><br>
             <b>Password</b>: demopassword`,
-            es: `Puedes ver un ejemplo online <a href="#">aquí</a>. Necesitarás una contraseña.<br><br>
+            es: `Puedes ver un ejemplo online <a href="https://tienda-de-lu-dev.myshopify.com/" target="_blank">aquí</a>. Necesitarás una contraseña.<br><br>
             <b>Contraseña</b>: demopassword`,
           },
         ],
       ],
     },
   },
-  // done
   mobileplayer: {
     header: {
       title: {
@@ -422,6 +434,10 @@ const locales = {
         {
           en: "This project is made for personal use",
           es: "Este proyecto esta hecho para uso personal",
+        },
+        {
+          en: "Test the app",
+          es: "Prueba el app",
         },
       ],
       descriptions: [
@@ -459,27 +475,15 @@ const locales = {
         ],
         [
           {
-            en: `You can read the documentation on the github repository.
-                  <br />
-                  <br />
-                  <b>
-                    The web services (backend API) of this app are not available to prevent bad use of
-                    them. As they include website scraping.
-                  </b>`,
-            es: `You can see a live example <a href="#">here</a>, and read the library
-                  documentation on the github repository.
-                  <br />
-                  <br />
-                  <b>
-                  Los servicios web (backend API) de esta aplicación no están disponibles para evitar un mal uso de los mismos.
-                  Ya que incluyen scraping de sitios web.
-                  </b>`,
+            en: `You can test the app downloading the apk file and installing it on your Android phone or you can watch a video down here,
+            to see the the app working on a phone.`,
+            es: `Puede probar la aplicación descargando el archivo apk e instalándolo en su teléfono Android o puede ver un video a continuación,
+            para ver la aplicación funcionando en un teléfono.`,
           },
         ],
       ],
     },
   },
-  // done
   portfolio: {
     header: {
       title: {
@@ -527,7 +531,6 @@ const locales = {
       ],
     },
   },
-  // done
   reactmaps: {
     header: {
       title: {
@@ -551,38 +554,40 @@ const locales = {
           en: "Future plans",
           es: "Planes a futuro",
         },
-        {
-          en: "Read the documentation and live example",
-          es: "Lea la documentación y vea el ejemplo",
-        },
       ],
       descriptions: [
         [
           {
             en: `Inspired by the COVID-19 pandemic and the 2020 US Elections, this library offers an easy set up
-              for using SVG maps and dealing with click and hovering functions as well as statistics, and coloring
-              states based on the statistics and limits comparison given by the data.`,
+              for using SVG maps and dealing with click and hovering functions, an easy to use and quick setup tooltip,
+              to display data with custom styles or with the default styles as well as statistics, and coloring states
+              based on the statistics and limits comparison given by the data.`,
             es: `Inspirado por la pandemia COVID-19 y las elecciones estadounidenses de 2020, esta biblioteca ofrece una configuración sencilla
-              para usar mapas SVG y manejar funciones de clic y desplazamiento, así como estadísticas y colorear
-              estados basados ​​en las estadísticas y la comparación de límites dados por los datos.`,
+              para usar mapas SVG y manejar funciones de clic y desplazamiento, un tooltip rápido y fácil de usar, para mostrar datos con estilos
+              personalizados o los incluídos por defecto así como estadísticas y colorear estados basados ​​en las estadísticas y la comparación
+              de límites dados por los datos.`,
           },
         ],
         [
           {
-            en: `The website includes spanish and english versions, as well as light and dark theme modes
-              to please the users experience.`,
-            es: `El sitio web incluye versiones en español e inglés, además de modos de temas tanto obscuro
-              como claro, para mejorar la experiencia de usuario.`,
-          },
-        ],
-        [
-          {
-            en: `You can see a live example <a href="#">here</a>, and read the library
-              documentation on the github repository.`,
-            es: `Puede ver un ejemplo en vivo <a href="#">aquí</a> y leer la documentación de la biblioteca en el repositorio de github.`,
+            en: `The future plans for this library includes an update where the developers can implement onclick functions similar to
+            a radio button or a toggle button in the state onclick events. As well as manipulating the map with DOM elements outside
+            of the <b>StatMap</b> component. The implementation of zoom on maps. As well as gradually including all countries maps, a world map and all countries
+            states map (even though this can be done with the use of a custom map(SVG component), this will be easier to implement for the developers).`,
+            es: `Los planes futuros para esta biblioteca incluyen una actualización en la que los desarrolladores pueden implementar funciones onclick
+            como botones de radio o un botón de alternancia en los eventos de estado onclick. Además de manipular el mapa con elementos DOM fuera del
+            componente <b>StatMap</b>. La implementación del zoom en mapas. Además de incluir gradualmente los mapas de todos los países, un mapa del mundo
+            y el mapa de todos los estados de todos países (aunque esto se puede hacer con el uso de un mapa personalizado (componente SVG), esto será
+            más fácil de implementar para los desarrolladores).`,
           },
         ],
       ],
+    },
+  },
+  footer: {
+    header: {
+      en: "Let's work together",
+      es: "Trabajemos juntos",
     },
   },
 };

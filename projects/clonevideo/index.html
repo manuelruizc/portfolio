@@ -17,6 +17,51 @@
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/mobile.css" />
     <link rel="stylesheet" href="../../darkmode.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./darkmode.css" />
+    <link rel="stylesheet" href="./mobile.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body id="body">
     <!-- Begin navigation -->
@@ -37,22 +82,33 @@
           class="nav-link-container nav-link-container--active"
         >
           <div class="active-nav-link"></div>
-          <a class="nav-link" href="#projects-title">Projects</a>
+          <a class="nav-link" href="/#projects-title">Projects</a>
         </div>
         <div id="skills" class="nav-link-container">
           <div class="active-nav-link"></div>
-          <a class="nav-link" href="#skills-title">Skills</a>
+          <a class="nav-link" href="/#skills-title">Skills</a>
         </div>
         <div id="about" class="nav-link-container">
           <div class="active-nav-link"></div>
-          <a href="#about-title" class="nav-link">About me</a>
+          <a href="/#about-title" class="nav-link">About me</a>
         </div>
       </div>
     </nav>
+    <div class="technologies">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>ReactJS</span>
+      <span>AWS</span>
+      <span>MySQL</span>
+      <span>NodeJS</span>
+      <span>Express</span>
+      <span>SASS</span>
+    </div>
     <!-- Ends navigation -->
     <!-- Begin header -->
     <div class="project-header">
-      <img src="../../assets/Screenshot.png" />
+      <img src="./assets/header.png" />
       <div class="project-header-overlay"></div>
       <div class="project-data-container">
         <div class="project-main-data">
@@ -65,7 +121,11 @@
           </span>
         </div>
         <div class="project-buttons-container">
-          <a href="#">Github</a>
+          <a
+            href="https://github.com/manuelruizc/youtube-clone-react"
+            target="_blank"
+            >Github</a
+          >
           <a href="http://www.clonetube.me" target="_blank">Demo</a>
         </div>
       </div>
@@ -84,7 +144,7 @@
         automática del videos al terminar el video actual.
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot1.png" alt="Homepage screenshot" />
       </div>
       <span class="component-description-text" style="margin-top: 8%">
         El reproductor de video cuenta con una sección de botones de control.
@@ -100,7 +160,7 @@
         reproduce el video.
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot2.png" alt="Homepage screenshot" />
       </div>
       <span class="component-description-text" style="margin-top: 8%">
         El reproductor miniatura permite reproducir videos y navegar por el
@@ -110,7 +170,7 @@
         regresar a la página de video.
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot3.png" alt="Homepage screenshot" />
       </div>
       <span class="component-description-text" style="margin-top: 8%">
         Al finalizar un video, y tener desactivada la reproducción automática
@@ -118,7 +178,7 @@
         (Solo en escritorio).
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot4.png" alt="Homepage screenshot" />
       </div>
       <span class="component-description-text" style="margin-top: 8%">
         La sección de la información del video, muestra la fecha, el numero de
@@ -131,7 +191,7 @@
         la subscripción.
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot5.png" alt="Homepage screenshot" />
       </div>
       <span class="component-description-text" style="margin-top: 8%">
         La sección de comentarios, permite publicar, visualizar y eliminar
@@ -143,14 +203,14 @@
         reproducción.
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot6.png" alt="Homepage screenshot" />
       </div>
       <span class="component-description-text" style="margin-top: 8%">
         También hay una opción para agregar videos a listas de reproducción. A
         una nueva lista de reproducción o a una lista de reproducción existente.
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot7.png" alt="Homepage screenshot" />
       </div>
       <span class="component-description-text" style="margin-top: 8%">
         La sección derecha contiene los videos relacionados con el video
@@ -159,7 +219,7 @@
         relacionados, esta acción se realizará solo 5 veces por video.
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot8.png" alt="Homepage screenshot" />
       </div>
     </div>
     <!-- Ends description -->
@@ -177,7 +237,7 @@
         progreso.
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot9.png" alt="Homepage screenshot" />
       </div>
     </div>
     <!-- Ends description -->
@@ -190,7 +250,7 @@
         características de las miniaturas en la página de Inicio.
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot10.png" alt="Homepage screenshot" />
       </div>
     </div>
     <!-- Ends description -->
@@ -211,7 +271,7 @@
         progreso de los videos vistos.
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot11.png" alt="Homepage screenshot" />
       </div>
     </div>
     <!-- Ends description -->
@@ -234,7 +294,7 @@
         Nov 12...).
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot12.png" alt="Homepage screenshot" />
       </div>
       <span class="component-description-text" style="margin-top: 8%">
         En el historial de búsqueda, se muestran los términos de búsqueda
@@ -245,7 +305,7 @@
         años, dependiendo la fecha de realizada la última búsqueda.
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot13.png" alt="Homepage screenshot" />
       </div>
     </div>
     <!-- Ends description -->
@@ -260,7 +320,7 @@
         y duración del video.
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot14.png" alt="Homepage screenshot" />
       </div>
     </div>
     <!-- Ends description -->
@@ -273,7 +333,7 @@
         suscrito, pueden visualizarse también en la barra lateral de navegación.
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot15.png" alt="Homepage screenshot" />
       </div>
     </div>
     <!-- Ends description -->
@@ -286,7 +346,7 @@
         búsqueda.
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot16.png" alt="Homepage screenshot" />
       </div>
       <span class="component-description-text" style="margin-top: 8%">
         Además del formulario de búsqueda, permite al usuario iniciar sesión, o
@@ -295,41 +355,93 @@
         cambiar el idioma del sitio.
       </span>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot17.png" alt="Homepage screenshot" />
       </div>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot18.png" alt="Homepage screenshot" />
       </div>
       <div class="component-description-screenshot">
-        <img src="../../assets/Homepage.png" alt="Homepage screenshot" />
+        <img src="./assets/screenshot19.png" alt="Homepage screenshot" />
+      </div>
+      <div
+        class="component-description-screenshot component-description-screenshot-iframe"
+        id="insertvideo"
+      >
+        <iframe
+          width="65%"
+          height="100%"
+          src="https://www.youtube.com/embed/wB9iuvzphYw"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
     <!-- Ends description -->
     <!-- Begins Footer -->
     <footer>
-      <span class="tag">Let's work together!</span>
+      <span class="tag" id="tag">Let's work together!</span>
       <div class="footer-icon-container">
         <div class="icon">
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/in/mannyruizwebdev/"
+            target="_blank"
+          >
             <i class="fa fa-linkedin"></i>
           </a>
         </div>
         <div class="icon">
-          <a href="#">
+          <a href="mailto:manuelruizcd@gmail.com">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://github.com/manuelruizc" target="_blank">
             <i class="fa fa-github"></i>
           </a>
         </div>
       </div>
-      <small>México 2020-2021<br />Made by Manuel Ruiz</small>
+      <small>México <span id="year"></span><br />Manuel Ruiz Cedillo</small>
     </footer>
     <!-- Ends Footer -->
     <div class="technology-logo-container" id="technology-logo-container">
       <div id="cursor-background"></div>
     </div>
-    <!-- <script type="text/javascript" src="../../locales/languages.js"></script> -->
     <script src="../js/locales.js"></script>
     <script src="../js/language.js"></script>
     <script src="../../darkmode.js"></script>
-    <!-- <script type="text/javascript" src="../../languageSelection.js"></script> -->
+    <script>
+      const videoSectionHTML = `<div class="video-showcase-container">
+        <div class="video-container">
+          <video
+          autoplay
+          controls
+          src="./assets/mobileplayervideo.mp4"
+          id="video"
+          ></video>
+          <a class="videoratebutton" href="#" id="ratebtn">Vel. x2</a>
+          </div>
+          </div>`;
+      const seeVideoBtn = document.getElementById("seevideobtn");
+      seeVideoBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        const parentHTML = document.getElementById("insertvideo");
+        parentHTML.innerHTML = videoSectionHTML;
+        const btn = document.getElementById("ratebtn");
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+          const video = document.getElementById("video");
+          if (video) {
+            if (video.playbackRate === 1) {
+              video.playbackRate = 2;
+              btn.textContent = "Vel. x1";
+            } else {
+              video.playbackRate = 1;
+              btn.textContent = "Vel. x2";
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>

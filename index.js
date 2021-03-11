@@ -1,8 +1,20 @@
+document.getElementById("year").innerHTML = new Date().getFullYear();
 const navlinks = document.getElementsByClassName("nav-link-container");
 const onClickNavlink = (event, index) => {
   event.preventDefault();
-  const { textContent } = event.target;
-  const id = document.getElementById(textContent.toLowerCase() + "-title");
+  let { textContent } = event.target;
+  textContent = textContent.toLowerCase();
+  console.log(textContent);
+  if (textContent === "acerca de mi" || textContent === "about me") {
+    textContent = "about";
+  }
+  if (textContent === "proyectos") {
+    textContent = "projects";
+  }
+  if (textContent === "habilidades") {
+    textContent = "skills";
+  }
+  const id = document.getElementById(textContent + "-title");
   id.scrollIntoView();
   const activeClass = "nav-link-container--active";
   for (let i = 0; i < navlinks.length; i++) {

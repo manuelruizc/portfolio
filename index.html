@@ -16,6 +16,48 @@
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./darkmode.css" />
     <link rel="stylesheet" href="./mobile.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body id="body">
     <!-- Begin navigation -->
@@ -63,13 +105,32 @@
           skills constantly.</span
         >
         <div class="network-container" id="network-container">
-          <a href="#" class="network-link">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/mannyruizwebdev/"
+            class="network-link"
+          >
             <i class="fa fa-linkedin"></i>
           </a>
-          <a href="#" class="network-link">
+          <a
+            target="_blank"
+            href="mailto:manuelruizcd@gmail.com"
+            class="network-link"
+          >
+            <i class="fa fa-envelope"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/manuelruizc"
+            class="network-link"
+          >
             <i class="fa fa-github"></i>
           </a>
-          <a href="#" class="network-link">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCQlk2PnZGfydgnY4ETMJEAg"
+            class="network-link"
+          >
             <i class="fa fa-youtube-play"></i>
           </a>
         </div>
@@ -108,19 +169,39 @@
         <div class="small-project-container sm-p1">
           <div class="project-title-container">
             <span class="technology" data-text="Mobile app">Mobile app</span>
-            <h3 class="project-name">Mobile music player</h3>
+            <h3 class="project-name" id="mobileplayername">
+              Mobile player app
+            </h3>
           </div>
           <div class="project-links-container">
             <div class="project-link">
-              <a href="#" class="project-link-anchor" data-text="Repository"
+              <a
+                target="_blank"
+                href="https://github.com/manuelruizc/mobile-audio-player"
+                class="project-link-anchor"
+                data-text="Repository"
                 >Repository</a
               >
             </div>
             <div class="project-link">
-              <a href="#" class="project-link-anchor" data-text="Demo">Demo</a>
+              <a
+                target="_blank"
+                href="/projects/mobileplayer/#seevideobtn"
+                class="project-link-anchor"
+                data-text="Demo"
+                >Demo</a
+              >
+            </div>
+            <div class="project-link">
+              <a
+                href="/projects/mobileplayer/"
+                class="project-link-anchor"
+                data-text="See more"
+                >See more</a
+              >
             </div>
           </div>
-          <div class="project-thumbnail"></div>
+          <div class="project-thumbnail mobileplayer-thumb"></div>
         </div>
         <div class="regular-project-container md-p1">
           <div class="project-title-container">
@@ -129,32 +210,61 @@
           </div>
           <div class="project-links-container">
             <div class="project-link">
-              <a href="#" class="project-link-anchor" data-text="Repository"
+              <a
+                target="_blank"
+                href="https://github.com/manuelruizc/youtube-clone-react"
+                class="project-link-anchor"
+                data-text="Repository"
                 >Repository</a
               >
             </div>
             <div class="project-link">
-              <a href="#" class="project-link-anchor" data-text="Demo">Demo</a>
+              <a
+                href="http://www.clonetube.me"
+                class="project-link-anchor"
+                data-text="Demo"
+                >Demo</a
+              >
+            </div>
+            <div class="project-link">
+              <a
+                href="/projects/clonevideo/"
+                class="project-link-anchor"
+                data-text="See more"
+                >See more</a
+              >
             </div>
           </div>
-          <div class="project-thumbnail"></div>
+          <div class="project-thumbnail clonetube-thumb"></div>
         </div>
         <div class="small-project-container sm-p2">
           <div class="project-title-container">
-            <span class="technology" data-text="Web app">Web app</span>
-            <h3 class="project-name">Mobile music player</h3>
+            <span class="technology" data-text="Website">Website</span>
+            <h3 class="project-name" id="portfolioname">Portfolio</h3>
           </div>
           <div class="project-links-container">
             <div class="project-link">
-              <a href="#" class="project-link-anchor" data-text="Repository"
+              <a
+                target="_blank"
+                href="https://github.com/manuelruizc/portfolio"
+                class="project-link-anchor"
+                data-text="Repository"
                 >Repository</a
               >
             </div>
             <div class="project-link">
-              <a href="#" class="project-link-anchor" data-text="Demo">Demo</a>
+              <a href="/" class="project-link-anchor" data-text="Demo">Demo</a>
+            </div>
+            <div class="project-link">
+              <a
+                href="/projects/portfolio/"
+                class="project-link-anchor"
+                data-text="See more"
+                >See more</a
+              >
             </div>
           </div>
-          <div class="project-thumbnail"></div>
+          <div class="project-thumbnail portfolio-thumb"></div>
         </div>
         <div class="regular-project-container md-p2">
           <div class="project-title-container">
@@ -163,19 +273,112 @@
           </div>
           <div class="project-links-container">
             <div class="project-link">
-              <a href="#" class="project-link-anchor" data-text="Repository"
+              <a
+                target="_blank"
+                href="https://github.com/manuelruizc/react-stats-maps"
+                class="project-link-anchor"
+                data-text="Repository"
                 >Repository</a
               >
             </div>
             <div class="project-link">
-              <a href="#" class="project-link-anchor" data-text="Demo">Demo</a>
+              <a
+                target="_blank"
+                href="/uselectionsmap/"
+                class="project-link-anchor"
+                data-text="Demo"
+                >Demo</a
+              >
+            </div>
+            <div class="project-link">
+              <a
+                href="/projects/reactmaps/"
+                class="project-link-anchor"
+                data-text="See more"
+                >See more</a
+              >
             </div>
           </div>
-          <div class="project-thumbnail"></div>
+          <div class="project-thumbnail react-maps-thumb"></div>
+        </div>
+        <div class="small-project-container sm-p3">
+          <div class="project-title-container">
+            <span class="technology" data-text="Ecommerce">E-commerce</span>
+            <h3 class="project-name">Camwo</h3>
+          </div>
+          <div class="project-links-container">
+            <div class="project-link">
+              <a
+                target="_blank"
+                href="https://github.com/manuelruizc/clothingstore"
+                class="project-link-anchor"
+                data-text="Repository"
+                >Repository</a
+              >
+            </div>
+            <div class="project-link">
+              <a
+                target="_blank"
+                href="https://tienda-de-lu-dev.myshopify.com/"
+                class="project-link-anchor"
+                data-text="Demo"
+                >Demo</a
+              >
+            </div>
+            <div class="project-link">
+              <a
+                href="/projects/ecommerce/"
+                class="project-link-anchor"
+                data-text="See more"
+                >See more</a
+              >
+            </div>
+          </div>
+          <div class="project-thumbnail ecommerce-thumb"></div>
+        </div>
+        <div class="regular-project-container md-p3">
+          <div class="project-title-container">
+            <span class="technology" data-text="Mobile app">Mobile app</span>
+            <h3 class="project-name">Coca-cola app</h3>
+          </div>
+          <div class="project-links-container">
+            <div class="project-link">
+              <a
+                target="_blank"
+                href="https://github.com/manuelruizc/react-native-animations-youtube"
+                class="project-link-anchor"
+                data-text="Repository"
+                >Repository</a
+              >
+            </div>
+            <div class="project-link">
+              <a
+                target="_blank"
+                href="https://www.reddit.com/r/reactnative/comments/hkfdlw/i_tried_to_recreate_a_uiux_prototype_i_watched_on/"
+                class="project-link-anchor"
+                data-text="Demo"
+                >Demo</a
+              >
+            </div>
+            <div class="project-link">
+              <a
+                href="/projects/cokeapp/"
+                class="project-link-anchor"
+                data-text="See more"
+                >See more</a
+              >
+            </div>
+          </div>
+          <div class="project-thumbnail cokeapp-thumb"></div>
         </div>
       </div>
       <div class="see-more">
-        <a href="#" data-text="See Github">See GitHub</a>
+        <a
+          target="_blank"
+          href="https://github.com/manuelruizc"
+          data-text="See Github"
+          >See GitHub</a
+        >
       </div>
     </div>
     <!-- Ends Projects -->
@@ -268,20 +471,28 @@
     <!-- End About Section -->
     <!-- Begins Footer -->
     <footer>
-      <span class="tag">Let's work together!</span>
+      <span class="tag" id="tag">Let's work together!</span>
       <div class="footer-icon-container">
         <div class="icon">
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/in/mannyruizwebdev/"
+            target="_blank"
+          >
             <i class="fa fa-linkedin"></i>
           </a>
         </div>
         <div class="icon">
-          <a href="#">
+          <a href="mailto:manuelruizcd@gmail.com">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://github.com/manuelruizc" target="_blank">
             <i class="fa fa-github"></i>
           </a>
         </div>
       </div>
-      <small>México 2020-2021<br />Made by Manuel Ruiz</small>
+      <small>México <span id="year"></span><br />Manuel Ruiz Cedillo</small>
     </footer>
     <!-- Ends Footer -->
     <div class="technology-logo-container" id="technology-logo-container">
